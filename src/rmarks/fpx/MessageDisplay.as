@@ -31,7 +31,7 @@ package rmarks.fpx
 		 * @param	font - name of the font to use "msgfont" is the default
 		 * @return	the MessageDisplay object created
 		 */
-		static public function Print(msg:String, xPos:Number = 0, yPos:Number = 0, color:uint = 0xFF0000, size:Number = 8, font:String = "msgfont"):void
+		static public function Print(msg:String, xPos:Number = 0, yPos:Number = 0, color:uint = 0xFF0000, size:Number = 8, font:String = "msgfont"):MessageDisplay
 		{
 			var mdObj:MessageDisplay = new MessageDisplay(msg, xPos, yPos, color, size, font);
 			FP.world.add(mdObj);
